@@ -140,7 +140,33 @@
             <button class="button2"> Buy Now</button>
         </div>
     </div>
-
+    <script>
+        function inc()
+        {
+            const a = document.getElementById("numchange")
+            const qnt = parseInt(a.innerHTML)
+            if   (qnt==10) {
+                alert("Maximum Quantity of product is 10")
+          } 
+          else{
+            a.innerHTML = qnt + 1;
+          }
+            
+        }
+        
+        function dec()
+        {
+            const a = document.getElementById("numchange")
+            const qnt = parseInt(a.innerHTML)
+          if   (qnt==1) {
+                alert("Minimum Quantity of product is 1")
+          } 
+          else{
+            a.innerHTML = qnt - 1;
+          }
+            
+        }
+    </script>
    
 </body>
 
